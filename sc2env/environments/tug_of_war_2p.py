@@ -15,14 +15,14 @@ SCREEN_SIZE  = 40
 MAP_NAME = 'TugOfWar-Self-Play'
 UNIT_TYPES = {
     'SCV': 45,
-    'Marine': 48,
-    'Viking': 9,
-    'Colossus': 83
+    'Marine': 48,  # Marine
+    'Viking': 9,   # Baneling
+    'Colossus': 83 # Immortal
 }
 action_to_ability_id = {
     0: 146, # Effect Marine
     1: 148, # Effect VikingFighter
-    2: 150, # Effect Colossus
+    2: 150, # Effect Immortal
     3: 152, # Effect Pylon
     'switch_player': 154, # Effect Pylon
 }
@@ -34,8 +34,8 @@ unit_types_player1 = {
     60 : 3, # 'Pylon'
     59 : 4, # 'Nexus'
     48 : 11, # 'Marine'
-    35 : 12, # 'Viking'
-    4 : 13 # 'Colossus'
+    9 : 12, # 'Viking'
+    83 : 13 # 'Immortal'
 }
 unit_types_player2 = {
     21 : 5, #'Barracks'
@@ -44,8 +44,8 @@ unit_types_player2 = {
     60 : 8, # 'Pylon'
     59 : 9, # 'Nexus'
     48 : 14, # 'Marine'
-    35 : 15, # 'Viking'
-    4 : 16 # 'Colossus'
+    9 : 15, # 'Viking'
+    83 : 16 # 'Immortal'
 }
 maker_cost = {
     'Marine' : 50,
