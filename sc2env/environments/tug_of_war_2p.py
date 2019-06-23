@@ -16,8 +16,8 @@ MAP_NAME = 'TugOfWar-Self-Play'
 UNIT_TYPES = {
     'SCV': 45,
     'Marine': 48,
-    'Viking': 35,
-    'Colossus': 4
+    'Viking': 9,
+    'Colossus': 83
 }
 action_to_ability_id = {
     0: 146, # Effect Marine
@@ -26,13 +26,7 @@ action_to_ability_id = {
     3: 152, # Effect Pylon
     'switch_player': 154, # Effect Pylon
 }
-action_to_name = {
-    0: "Effect Marine",
-    1: "Effect VikingFighter",
-    2: "Effect Colossus",
-    3: "Effect Pylon",
-    4: "no_op",
-}
+
 unit_types_player1 = {
     21 : 0, #'Barracks'
     28 : 1, # 'Starport'
@@ -56,7 +50,7 @@ unit_types_player2 = {
 maker_cost = {
     'Marine' : 50,
     'Viking' : 75,
-    'Colossus' : 200,
+    'Colossus' : 100,
     'Pylon' : 75
 }
 class TugOfWar():
